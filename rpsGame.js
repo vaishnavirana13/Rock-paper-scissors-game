@@ -6,10 +6,30 @@ const choices =  document.querySelectorAll(".choice");
  const userScorePara = document.querySelector("#user-score");
  const compScorePara = document.querySelector("#comp-score");
 const gencompchoice = () => {
-	const options = ["rock" ,"paper","scissors"]
+const options = ["rock" ,"paper","scissors"]
    const randoms  = Math.floor(Math.random() * 3);
    return options[randoms];
 }
+
+
+//reset button logic
+let resetButton = document.querySelector("#reset")
+function resetThis() {
+	if (resetButton) {
+	   return msg.classList.value = ''
+	}
+}
+
+
+
+
+
+
+
+
+
+
+// when game is a draw
 const drawGame = () =>{
 
 	// @ts-ignore
@@ -18,7 +38,10 @@ const drawGame = () =>{
 	msg.style.backgroundColor = "yellow"
 
 }
+   
 
+
+// declartion of the winner
 const showWinner = (userWin,userchoice,compChoice) =>{
 	if (userWin) {
 		userscore++

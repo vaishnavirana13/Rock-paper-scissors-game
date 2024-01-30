@@ -1,47 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="rpsGame.css">
-	<title>Rock Paper Scissors</title>
-</head>
-<body>
-	<div class="outer-div">
-	<div>
-		<h1>Play Rock Paper & Scissors</h1> 
-		<img id="hands" src="rps1.gif"alt="">
-	</div>
-		<div class="choices">
-			<div  id="rock" class="choice">
-				<img src="rock.jpg" alt="">
-			</div>
-			<div  id="paper" class="choice">
-				<img src="paper.jpg" alt="">
-			</div>
-			<div  id="scissors" class="choice">
-				<img src="scissors.jpg" alt="">
-			</div>
-		</div>
-		<div class="score-board">
-			<div class="score">
-				<p id="user-score">0</p>
-				<p>You</p>
-			</div>
-			<div class="score">
-				<p id="comp-score">0</p>
-				<p>comp</p>
-			
-			</div>
-		</div>
-		<div class="container">
-			<button type="button" id="refresh">Reset</button>
-			<p id="msg">
-				"Play Your Move"
-			</p>
-		</div>
-	</div>
-	<script src="rpsGame.js"></script>
-	
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="rpsGame.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div class="outer-div">
+      <div>
+        <h1>Play Rock Paper & Scissors</h1>
+        <img id="hands" src="rps1.gif" alt="" />
+      </div>
+      <div class="choices">
+        <div id="rock" class="choice">
+          <img src="rock.jpg" alt="" />
+        </div>
+        <div id="paper" class="choice">
+          <img src="paper.jpg" alt="" />
+        </div>
+        <div id="scissors" class="choice">
+          <img src="scissors.jpg" alt="" />
+        </div>
+      </div>
+      <div class="score-board">
+        <div class="score">
+          <p id="user-score">0</p>
+          <p>You</p>
+        </div>
+        <div class="score">
+          <p id="comp-score">0</p>
+          <p>comp</p>
+        </div>
+      </div>
+      <div class="container">
+        <button onclick="resetThis()" type="button" id="reset">Reset</button>
+        <p id="msg">"Play Your Move"</p>
+      </div>
+    </div>
+    <script src="rpsGame.js"></script>
+  </body>
 </html>
