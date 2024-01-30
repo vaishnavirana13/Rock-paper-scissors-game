@@ -1,0 +1,84 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	
+}
+.outer-div{
+	background-color: rgb(239, 216, 189);
+}
+h1{
+   
+	background-color: rgba(1, 35, 185, 0.734) ;
+	color: rgb(255, 255, 255);
+	height: 10rem;
+	display: flex ;
+	background-repeat: no-repeat;
+	text-align: center;
+	justify-content: center;
+	align-content: start;
+	padding-top: 10px;
+	align-items: inherit;
+}
+
+.choice{
+	 height: 165px;
+	 width: 165px;
+	 border-radius: 50%;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+.choice:hover{
+	opacity: 0.8;
+	color: black;
+	background-color: rgba(0, 255, 255, 0.617);
+}
+img{
+	height: 150px;
+	width: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+img:hover{
+    background-color: aqua;
+}
+.choices{
+	display:flex;
+justify-content: center;
+align-items: center;
+gap: 5rem;
+margin-top: 3rem;
+}
+
+.score-board{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1rem;
+	margin-top: 2rem;
+	gap: 5rem;
+}
+#user-score,#comp-score{
+	 font-size: 5rem;
+}
+.container{
+	text-align: center;
+	margin-bottom: 20px;
+}
+#refresh{
+background-color: bisque;
+color: black;
+height: 30px;
+width: 80px;
+margin-right: 100px;
+font-size: larger;
+background-image: linear-gradient( 70deg rgb(29, 28, 28) rgb(65, 61, 61) rgb(149, 141, 141));
+}
+#msg{
+   background-color: rgb(88, 126, 142);
+   text-align: center;
+   display: inline;
+   height: 60px;
+   border-radius: 10px;
+   font-size: 4vw;
+}
